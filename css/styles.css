@@ -22,13 +22,13 @@ body {
     grid-template-columns: 130px 90px 1fr 450px 600px;
     /*grid-row-gap: 20px;*/
     grid-template-areas:
-        "name name name name .   "
-        ".    .    .    .    .   "
-        ".    prgm prgm prev map"
-        ".    time agnd prev map"
-        ".    .    visi prev map"
-        ".    .    vtxt .    slider"
-        ".    .    .    .    .   "
+        "name name name name   ."
+        ".    .    .    .      ."
+        ".    prgm prgm prev   map"
+        ".    time agnd prev   map"
+        ".    .    visi prev   map"
+        ".    .    vtxt slider slider"
+        ".    .    .    .      ."
         ;
 }
 #title {
@@ -67,13 +67,39 @@ body {
     padding: 5px 22px;
 }
 #agenda > .item > .room {
-    font-size: 0.7em;   
+    font-size: 0.7em;
 }
 #prev {
     grid-area: prev;
-    background: lime;
 }
 #map {
     grid-area: map;
-    background: green;
+}
+/*remove after getting rid of mockup img's*/
+.tmp-img > img {
+    height: 100%;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+#slider {
+    grid-area: slider;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#slider > .circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: solid 3px white;
+    margin: 8px;
+    transition: 300ms ease-in-out;
+}
+#slider > .active {
+    background: white;
+}
+.code {
+    height: 0;
+    width: 0;
 }

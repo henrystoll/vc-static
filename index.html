@@ -6,7 +6,7 @@
 
     <title>VC Static</title>
     <meta name="description" content="VC">
-    <meta name="author" content="Henry">
+    <meta name="author" content="Luka & Henry">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="stylesheet" href="css/styles.css?v=1.0">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
@@ -39,9 +39,21 @@
                 <div class="room">Room: C2.05</div>
             </div>
         </div>
-        <div id="prev">Preview of Maps</div>
-        <div id="map">Main Map shown with sensor data</div>
+        <div id="prev" class="tmp-img">
+            <img src="img\prev.png" alt="Preview">
+        </div>
+        <div id="map" class="tmp-img">
+            <img src="img\map.png" alt="Map">
+        </div>
+        <div id="slider">
+            <!-- first circle always there shish -->
+            <span class="circle active"></span>
+            <!-- generated circles go here -->
+        </div>
+    </div>
+    <div class="code">
+        <!-- div with id's go here -->
     </div>
 </body>
-    <!-- <script src="js/scripts.js"></script> -->
+    <script src="js/scripts.js"></script>
 </html>
