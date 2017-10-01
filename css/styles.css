@@ -98,7 +98,8 @@ body {
     border-radius: 100%;
     border: solid 3px white;
     margin: 8px;
-    transition: 300ms ease-in-out;
+    /*add zoom / scale up and down w/ bounce!*/
+    transition: 400ms ease-in-out;
 }
 
 #slider>.active {
