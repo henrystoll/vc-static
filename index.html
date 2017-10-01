@@ -13,47 +13,69 @@
 </head>
 <body>
     <div id="main-grid">
-        <div id="title">SAP Veranstaltung</div>
-        <div id="agenda-title">Current Sessions</div>
-        <div id="time">
-            <div class="time">17.00</div>
-            <div class="time">17.00</div>
-            <div class="time">17.00</div>
-            <div class="time">17.00</div>
-            <div class="time">17.00</div>
-        </div>
+        <h1 id="title">SAP Veranstaltung</h1>
+        <h2 id="agenda-title">Current Sessions</h2>
         <div id="agenda">
-            <div class="item">Willkommen
-                <div class="room">Room: C2.05</div>
+            <div class="agenda-item">
+                <div class="time">17:00</div>
+                <div class="detail">
+                    <div class="title">Willkommen</div>
+                    <div class="room">
+                        <span class="label">Room:</span>
+                        <span class="title">C2.05</span>
+                    </div>
+                </div>
             </div>
-            <div class="item">Programmierworkshop
-                <div class="room">Room: C2.05</div>
+            <div class="agenda-item">
+                <div class="time">17:00</div>
+                <div class="detail">
+                    <div class="title">Willkommen</div>
+                    <div class="room">
+                        <span class="label">Room:</span>
+                        <span class="title">C2.05</span>
+                    </div>
+                </div>
             </div>
-            <div class="item">Internet of things
-                <div class="room">Room: C2.05</div>
+            <div class="agenda-item">
+                <div class="time">17:00</div>
+                <div class="detail">
+                    <div class="title">Willkommen</div>
+                    <div class="room">
+                        <span class="label">Room:</span>
+                        <span class="title">C2.05</span>
+                    </div>
+                </div>
             </div>
-            <div class="item">Speed Bewerbung
-                <div class="room">Room: C2.05</div>
+            <div class="agenda-item">
+                <div class="time">17:00</div>
+                <div class="detail">
+                    <div class="title">Willkommen</div>
+                    <div class="room">
+                        <span class="label">Room:</span>
+                        <span class="title">C2.05</span>
+                    </div>
+                </div>
             </div>
-            <div class="item">Speed Bewerbung
-                <div class="room">Room: C2.05</div>
+            <div class="agenda-item">
+                <div class="time">17:00</div>
+                <div class="detail">
+                    <div class="title">Willkommen</div>
+                    <div class="room">
+                        <span class="label">Room:</span>
+                        <span class="title">C2.05</span>
+                    </div>
+                </div>
             </div>
         </div>
-        <div id="prev" class="tmp-img">
-            <img src="img\prev.png" alt="Preview">
+        <div id="maps">
+            <img id="level-1" class="map" src="img\prev1.png" alt="Preview">
+            <img id="level-2" class="map" ssrc="img\prev2.png" alt="Preview">
+            <img id="level-3" class="map" ssrc="img\prev3.png" alt="Preview">
         </div>
-        <div id="map" class="tmp-img">
-            <img src="img\map.png" alt="Map">
+        <div id="indicator">
+            <div class="cricle"></div><!--Auto generated depending on the levels-->
         </div>
-        <div id="slider">
-            <!-- first circle always there shish -->
-            <span class="circle active"></span>
-            <!-- generated circles go here -->
-        </div>
-    </div>
-    <div class="code">
-        <!-- div with id's go here -->
     </div>
 </body>
-    <script src="js/scripts.js"></script>
+<script src="js/scripts.js"></script>
 </html>
