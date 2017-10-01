@@ -1,11 +1,11 @@
 :root {
-  /*for variables*/
+    /*for variables*/
 }
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
- }
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
 body {
     color: white;
     background: black;
@@ -18,47 +18,45 @@ body {
 #main-grid {
     display: grid;
     height: 100vh;
-    grid-template-rows: 100px 100px 90px 1fr 100px 60px 100px;
-    grid-template-columns: 130px 90px 1fr 450px 600px;
-    /*grid-row-gap: 20px;*/
-    grid-template-areas:
-        "name name name name   ."
-        ".    .    .    .      ."
-        ".    prgm prgm prev   map"
-        ".    time agnd prev   map"
-        ".    .    visi prev   map"
-        ".    .    vtxt slider slider"
-        ".    .    .    .      ."
-        ;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 3%;
+    grid-template-areas: "title ." "agenda maps" ". indicator"
 }
+
 #title {
-    grid-area: name;
+    grid-area: title;
     font-weight: bold;
     font-size: 70px;
     line-height: 100%;
 }
+
 #agenda-title {
-    grid-area: prgm;
+    grid-area: agenda;
     font-size: 45px;
     line-height: 75px
 }
-#time {
-    grid-area: time;
-    border-right: solid 5px white;
-    margin-top: 2px;
-    padding-top: 6px;
-}
-#time > .time {
-    margin-bottom: calc(95px - 25px) /*total one item height - font-size*/
-}
+
 #agenda {
-    grid-area: agnd;
-    background: black;
+    grid-area: agenda;
+    display: flex;
+    flex-direction: column;
 }
+
+.agenda-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.agenda-item>.time {
+    margin-bottom: calc(95px - 25px)/*total one item height - font-size*/
+}
+
 /*one item total height: 95*/
-#agenda > .item {
+
+.agenda-item>.detail {
     box-sizing: content-box;
-    height: calc(65px - 2*5px);    /*intended size - padding*/
+    height: 65px;
     border: solid 4px #F0AB00;
     border-radius: 25px;
     margin-bottom: 22px;
@@ -66,29 +64,35 @@ body {
     margin-right: 50px;
     padding: 5px 22px;
 }
-#agenda > .item > .room {
+
+.agenda-item>.detail>.title {}
+
+.agenda-item>.room {
     font-size: 0.7em;
+    display: flex;
 }
-#prev {
-    grid-area: prev;
+
+#maps {
+    grid-area: maps;
 }
-#map {
-    grid-area: map;
-}
+
 /*remove after getting rid of mockup img's*/
-.tmp-img > img {
+
+.map {
     height: 100%;
     max-width: 100%;
     display: block;
     margin: auto;
 }
+
 #slider {
     grid-area: slider;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#slider > .circle {
+
+#slider>.circle {
     width: 30px;
     height: 30px;
     border-radius: 100%;
@@ -96,10 +100,7 @@ body {
     margin: 8px;
     transition: 300ms ease-in-out;
 }
-#slider > .active {
+
+#slider>.active {
     background: white;
-}
-.code {
-    height: 0;
-    width: 0;
 }
