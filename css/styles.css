@@ -88,13 +88,36 @@ body {
 
 #maps {
     grid-area: maps;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 1rem;
+    grid-template-areas: "inactive1 active"  "inactive2 active";
 }
 
 #maps .map {
-    height: 100%;
-    max-width: 100%;
     display: block;
-    margin: auto;
+    margin: auto;´
+}
+
+#maps .inactive {
+
+}
+
+#level-1 {
+    grid-area: inactive1;
+}
+
+#level-2 {
+    grid-area: inactive2;
+}
+
+#level-3 {
+    grid-area: active;
+}
+
+#maps .active {
+    height: auto;
 }
 
 /**
