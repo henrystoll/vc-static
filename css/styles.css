@@ -6,35 +6,43 @@
     box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     color: white;
     background: black;
-    margin: 0;
+    margin: 3rem;
     font-family: 'PT Sans', sans-serif;
-    font-size: 25px;
-    line-height: 25px;
+    font-size: 100%;
+    overflow: hidden;
 }
 
 #main-grid {
     display: grid;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     grid-template-columns: 40% 60%;
-    grid-template-rows: auto auto auto;
-    grid-row-gap: 3%;
-    grid-template-areas: "title ." "agenda maps" ". indicator"
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 1rem;
+    grid-template-areas: "title ." "agenda-title ." "agenda maps" ". indicator"
 }
 
 #title {
     grid-area: title;
     font-weight: bold;
-    font-size: 70px;
-    line-height: 100%;
+    font-size: 5rem;
 }
 
+/**
+* Agenda
+*/
+
 #agenda-title {
-    grid-area: agenda;
-    font-size: 45px;
-    line-height: 75px
+    grid-area: agenda-title;
+    font-size: 4rem;
 }
 
 #agenda {
@@ -45,54 +53,62 @@ body {
 
 .agenda-item {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .agenda-item>.time {
-    margin-bottom: calc(95px - 25px)/*total one item height - font-size*/
+    border-right: 5px solid #ffffff;
+    height: 100%;
+    font-size: 2rem;
+    padding: 2.5rem 1.5rem 0 0;
 }
-
-/*one item total height: 95*/
 
 .agenda-item>.detail {
-    box-sizing: content-box;
-    height: 65px;
+    width: 100%;
     border: solid 4px #F0AB00;
-    border-radius: 25px;
-    margin-bottom: 22px;
-    margin-left: 32px;
-    margin-right: 50px;
-    padding: 5px 22px;
+    border-radius: 2rem;
+    padding: 0.5rem 1.5rem;
+    margin: 1.5rem 0 0 1.5rem;
+}
+.agenda-item:last-child >.detail{
+    margin-bottom: 1.5rem;
 }
 
-.agenda-item>.detail>.title {}
-
-.agenda-item>.room {
-    font-size: 0.7em;
-    display: flex;
+.agenda-item>.detail>.title {
+    font-size: 2.5rem;
 }
+
+.agenda-item>.detail>.room {
+    font-size: 1.5rem;
+}
+
+/**
+* Maps
+*/
 
 #maps {
     grid-area: maps;
 }
 
-/*remove after getting rid of mockup img's*/
-
-.map {
+#maps .map {
     height: 100%;
     max-width: 100%;
     display: block;
     margin: auto;
 }
 
-#slider {
-    grid-area: slider;
+/**
+* Indicator
+*/
+
+#indicator {
+    grid-area: indicator;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#slider>.circle {
+#indicator>.circle {
     width: 30px;
     height: 30px;
     border-radius: 100%;
@@ -102,6 +118,6 @@ body {
     transition: 400ms ease-in-out;
 }
 
-#slider>.active {
+#indicator>.active {
     background: white;
 }
