@@ -27,7 +27,7 @@ body {
     grid-template-columns: 40% 60%;
     grid-template-rows: auto auto auto auto;
     grid-gap: 1rem;
-    grid-template-areas: "title ." "agenda-title ." "agenda maps" ". indicator"
+    grid-template-areas: "title maps" "agenda-title maps" "agenda maps" ". indicator"
 }
 
 #title {
