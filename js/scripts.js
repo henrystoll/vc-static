@@ -13,26 +13,27 @@ $(function() {
 });
 
 function initSlider(iNoMaps) {
-    var templateSlider = '<span class="circle"></span>';
+    var templateSlider = '<span class="circle"></span>'
     for (var i = 0; i < iNoMaps - 1; i++) {
         $("#indicator").append(templateSlider);
     }
 }
 
 function nextMap() {
-    const CIRCLE = "circle";
-    const ACTIVE_CIRCLE = CIRCLE + " active";
-    var iNoLastMap = iNoCurrentMap;
+    var iNoLastMap = iNoCurrentMap
     // cycle thru active map
     iNoCurrentMap++;
     if (iNoCurrentMap === iNoMaps) {
         iNoCurrentMap = 0;
     }
 
-    //TODO cycle thru svg here
+    // cycle thru svg here
+    $("#indicator .map.active").attr("class", "map");                           
+    $("#indicator .map:eq(" + iNoCurrentMap + ")").attr("class", "map active"); 
+
 
     //slider bar
-    $("#indicator .circle.active").attr("class", CIRCLE);                           //remove active from current circle
-    $("#indicator .circle:eq(" + iNoCurrentMap + ")").attr("class", ACTIVE_CIRCLE); //set next slider circle to active
+    $("#indicator .circle.active").attr("class", "circle");                           //remove active from current circle
+    $("#indicator .circle:eq(" + iNoCurrentMap + ")").attr("class", "circle active"); //set next slider circle to active
     // console.log("map #" + iNoCurrentMap);
 }
