@@ -115,7 +115,6 @@ header h1 {
 
 #maps {
     display: flex;
-    transition: all 2s; /*does only work for some grid properties in Firefox (yes no chrome)*/
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -128,7 +127,6 @@ header h1 {
 
 #maps .map {
     max-height: 44%;
-
 }
 
 #maps .active {
@@ -150,7 +148,7 @@ header h1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform:  translateX(-50%) translateY(-50%) rotate(90deg);
+    transform: translateX(-50%) translateY(-50%) rotate(90deg);
 }
 
 /**
@@ -184,4 +182,9 @@ header h1 {
 
 footer {
     grid-area: footer;
+}
+
+footer #logo {
+    height: 80px;
+    margin: 20px;
 }
