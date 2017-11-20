@@ -18,21 +18,22 @@ body {
     background: #000000;
     /*margin: 3rem;*/
     font-family: 'PT Sans', sans-serif;
-    font-size: 100%;
+    font-size: 16px;
     /*just disabled for testing*/
     /*overflow: hidden;*/
 }
 
 #main-grid {
     display: grid;
-    height: 100%;
-    width: 100%;
-    grid-template-columns: 55% 45%;
-    grid-template-rows: auto 1fr auto;
+    max-height: 100vh;
+    max-width: 100vw;
+    grid-template-columns: 55% 42%;
+    grid-template-rows: 1fr 95vh 1fr 1fr;
     grid-gap: 1rem;
     grid-template-areas:
         "header  header"
         "agenda  maps"
+        "agenda indicator"
         "footer  footer"
     ;
 }
@@ -44,7 +45,7 @@ header{
 
 header h1 {
     font-weight: bold;
-    font-size: 50px;
+    font-size: 3.2rem;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -58,13 +59,14 @@ header h1 {
     grid-area: agenda;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100%;
+    grid-template-rows: 1fr;
     margin-left: 80px;
 }
 
 #agenda-current {
  margin-right: 40px;
 }
+
 .agenda-title {
     font-size: 40px;
     margin-left: 60px;
@@ -102,11 +104,11 @@ header h1 {
 }
 
 .agenda-item .detail>.title {
-    font-size: 18px;
+    font-size: 1.4rem;
 }
 
 .agenda-item .detail>.room {
-    font-size: 12px;
+    font-size: 1rem;
 }
 
 /**
@@ -114,54 +116,36 @@ header h1 {
 */
 
 #maps {
-    background: tomato;
-    grid-area: maps;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: auto auto auto;
-    grid-gap: 1rem;
-    grid-template-areas:
-        "inactive1 active"
-        "inactive2 active"
-        "indicator indicator"
-    ;
+    display: flex;
     transition: all 2s; /*does only work for some grid properties in Firefox (yes no chrome)*/
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    max-height: 80%;
+}
+
+#maps img {
+    max-height: 100%;
 }
 
 #maps .map {
-    display: block;
-    margin: auto;
-}
+    max-height: 44%;
 
-#maps .inactive {
-
-}
-
-#level-1 {
-    grid-area: inactive1;
-}
-
-#level-2 {
-    grid-area: inactive2;
-}
-
-#level-3 {
-    grid-area: active;
 }
 
 #maps .active {
-    height: auto;
+    order: 99;
+    align-self: stretch;
+    max-height: 95%;
 }
 
 /**
 * Indicator
 */
 
-/*Indicator not visible yet*/
-
 #indicator {
     grid-area: indicator;
-    justify-self: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,4 +163,12 @@ header h1 {
 
 #indicator>.active {
     background: white;
+}
+
+/**
+* Footer
+*/
+
+footer {
+    grid-area: footer;
 }
