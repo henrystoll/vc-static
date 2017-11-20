@@ -1,4 +1,4 @@
-var TIMER = 2;    //[s] map will switch every [s] seconds TODO: import thru config.json
+var TIMER = 10;    //[s] map will switch every [s] seconds TODO: import thru config.json
 var iNoMaps = 3;
 var iNoCurrentMap = 0;
 
@@ -29,16 +29,20 @@ function nextMap() {
 
     $("#maps").fadeOut();
     setTimeout(function () {
+        //slider bar
+        $("#indicator .circle.active").attr("class", "circle");                           //remove active from current circle
+        $("#indicator .circle:eq(" + iNoCurrentMap + ")").attr("class", "circle active"); //set next slider circle to active
+        
         // cycle thru svg here
         $("#maps .map.active").attr("class", "map")
         $("#maps .map:eq(" + iNoCurrentMap + ")").attr("class", "map active")
         $("#maps").fadeIn();
+
+
+        
+
     }, 350)
     
    
 
-    //slider bar
-    $("#indicator .circle.active").attr("class", "circle");                           //remove active from current circle
-    $("#indicator .circle:eq(" + iNoCurrentMap + ")").attr("class", "circle active"); //set next slider circle to active
-    // console.log("map #" + iNoCurrentMap);
 }

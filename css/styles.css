@@ -115,7 +115,6 @@ header h1 {
 
 #maps {
     display: flex;
-    transition: all 2s; /*does only work for some grid properties in Firefox (yes no chrome)*/
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
