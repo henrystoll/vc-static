@@ -25,19 +25,18 @@ body {
     display: grid;
     height: 100%;
     width: 100%;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: repeat(3, auto) 150px;
+    grid-template-columns: 60% 50%;
+    grid-template-rows: 150px auto 150px;
     grid-gap: 1rem;
     grid-template-areas:
-        "title         maps"
-        "agenda-title  maps"
-        "agenda        maps"
-        ".             indicator"
+        "header  header"
+        "agenda  maps"
+        "footer  footer"
     ;
 }
 
-#title {
-    grid-area: title;
+header{
+    grid-area: header;
     font-weight: bold;
     font-size: 5rem;
 }
@@ -45,11 +44,6 @@ body {
 /**
 * Agenda
 */
-
-#agenda-title {
-    grid-area: agenda-title;
-    font-size: 4rem;
-}
 
 #agenda {
     grid-area: agenda;
@@ -95,19 +89,20 @@ body {
 #maps {
     grid-area: maps;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto auto auto;
     grid-gap: 1rem;
     grid-template-areas:
         "inactive1 active"
         "inactive2 active"
+        "indicator indicator"
     ;
     transition: all 2s; /*does only work for some grid properties in Firefox (yes no chrome)*/
 }
 
 #maps .map {
     display: block;
-    margin: auto;´
+    margin: auto;
 }
 
 #maps .inactive {
@@ -137,7 +132,6 @@ body {
 /*Indicator not visible yet*/
 
 #indicator {
-    grid-area: indicator;
     display: flex;
     justify-content: center;
     align-items: center;
