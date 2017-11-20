@@ -1,0 +1,54 @@
+{
+	"agendaItems": [
+		{
+			"title": "Willkommen", 
+			"time": {
+				"from": "17:00"
+			},
+			"room": {
+				"id": "C4.03",
+				"capacity": "40"
+			}
+		},
+		{
+			"title": "Programmierworkshop", 
+			"time": {
+				"from": "18:00"
+			}, 
+			"room": {
+				"id": "A0.00",
+				"capacity": "40"
+			}
+		},
+		{
+			"title": "Digitale Medien", 
+			"time": {
+				"from": "19:00"
+			}, 
+			"room": {
+				"id": "A2.15",
+				"capacity": "40"
+			}
+		},
+		{
+			"title": "Wirtschaftsinformatik - Sales & Consulting", 
+			"time": {
+				"from": "19:00"
+			}, 
+			"room": {
+				"id": "B2.07",
+				"capacity": "40"
+			}
+		},
+		{
+			"title": "Ende", 
+			"time": {
+				"from": "20:00"
+			}, 
+			"room": {
+				"id": "A3.01",
+				"capacity": "40"
+			}
+		}
+	]
+}
