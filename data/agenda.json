@@ -3,7 +3,8 @@
 		{
 			"title": "Willkommen", 
 			"time": {
-				"from": "17:00"
+                "from": "17:00",
+                "to": "18:00"
 			},
 			"room": {
 				"id": "C4.03",
@@ -13,7 +14,8 @@
 		{
 			"title": "Programmierworkshop", 
 			"time": {
-				"from": "18:00"
+                "from": "18:00",
+                "to": "20:00"
 			}, 
 			"room": {
 				"id": "A0.00",
