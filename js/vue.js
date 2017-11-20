@@ -8,6 +8,8 @@ var app = new Vue({
         },
         sortedEvents: [],   // all events from JSON
         filteredEvents: [], // always top 5 events
+        currentEvents: [],
+        nextEvents: []
     },
     methods: {
         updateEvents: function () {
@@ -19,7 +21,7 @@ var app = new Vue({
             })
             let lastTime;
             filteredEvents.forEach(item => {
-                if (i < MAX_EVENTS) {
+                if (i <= MAX_EVENTS) {
                     let tempTime = item.time.stamp.format("X")
                     if (lastTime === tempTime) {
                         item.time.stamp = ""
