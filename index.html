@@ -11,6 +11,8 @@
     <script src="https://unpkg.com/vue"></script>
     <link rel="stylesheet" href="css/styles.css?v=1.0">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.19.2/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.2/locale/de.js"></script>
 </head>
 <body>
 
@@ -22,12 +24,12 @@
     <div id="agenda">
         <div v-for="item in filteredEvents">
             <div class="agenda-item">
-                <div class="time">{{item.time}}</div>
+                <div class="time">{{item.time.stamp | time}}</div>
                 <div class="detail">
                     <div class="title">{{item.title}}</div>
                     <div class="room">
                         <span class="label">Room:</span>
-                        <span class="title">{{item.room}}</span>
+                        <span class="title">{{item.room.id}}</span>
                     </div>
                 </div>
             </div>
