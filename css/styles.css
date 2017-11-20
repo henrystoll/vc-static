@@ -4,6 +4,8 @@
 
 *, *:before, *:after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -13,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
     color: white;
-    background: black;
+    background: #000000;
     /*margin: 3rem;*/
     font-family: 'PT Sans', sans-serif;
     font-size: 100%;
@@ -25,8 +27,8 @@ body {
     display: grid;
     height: 100%;
     width: 100%;
-    grid-template-columns: 60% 50%;
-    grid-template-rows: 150px auto 150px;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: auto 1fr auto;
     grid-gap: 1rem;
     grid-template-areas:
         "header  header"
@@ -37,8 +39,15 @@ body {
 
 header{
     grid-area: header;
+    padding: 30px 0;
+}
+
+header h1 {
     font-weight: bold;
-    font-size: 5rem;
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 /**
@@ -47,8 +56,19 @@ header{
 
 #agenda {
     grid-area: agenda;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+    margin-left: 80px;
+}
+
+#agenda-current {
+ margin-right: 40px;
+}
+.agenda-title {
+    font-size: 40px;
+    margin-left: 60px;
+    margin-bottom: 20px;
 }
 
 .agenda-item {
@@ -56,30 +76,37 @@ header{
     flex-direction: row;
 }
 
-.agenda-item>.time {
-    border-right: 5px solid #ffffff;
+.agenda-item .time {
     height: 100%;
-    font-size: 2rem;
-    padding: 2.5rem 1.5rem 0 0;
+    font-size: 16px;
+    width: 50px;
+    text-align: right;
 }
 
-.agenda-item>.detail {
+.agenda-item .detail-wrapper {
+    border-left: 5px solid #ffffff;
+    padding-left: 25px;
+    padding-bottom: 17px;
+    margin-left: 12px;
+    width: 100%;
+}
+
+.agenda-item .detail {
     width: 100%;
     border: solid 4px #F0AB00;
-    border-radius: 2rem;
-    padding: 0.5rem 1.5rem;
-    margin: 1.5rem 0 0 1.5rem;
+    border-radius: 25px;
+    padding: 10px 20px;
 }
 .agenda-item:last-child >.detail{
     margin-bottom: 1.5rem;
 }
 
-.agenda-item>.detail>.title {
-    font-size: 2.5rem;
+.agenda-item .detail>.title {
+    font-size: 18px;
 }
 
-.agenda-item>.detail>.room {
-    font-size: 1.5rem;
+.agenda-item .detail>.room {
+    font-size: 12px;
 }
 
 /**
@@ -87,6 +114,7 @@ header{
 */
 
 #maps {
+    background: tomato;
     grid-area: maps;
     display: grid;
     grid-template-columns: 30% 70%;
@@ -132,10 +160,11 @@ header{
 /*Indicator not visible yet*/
 
 #indicator {
+    grid-area: indicator;
+    justify-self: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: tomato;
 }
 
 #indicator>.circle {
