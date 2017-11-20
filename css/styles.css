@@ -127,7 +127,6 @@ header h1 {
 
 #maps .map {
     max-height: 44%;
-
 }
 
 #maps .active {
@@ -149,7 +148,7 @@ header h1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform:  translateX(-50%) translateY(-50%) rotate(90deg);
+    transform: translateX(-50%) translateY(-50%) rotate(90deg);
 }
 
 /**
@@ -183,4 +182,9 @@ header h1 {
 
 footer {
     grid-area: footer;
+}
+
+footer #logo {
+    height: 80px;
+    margin: 20px;
 }
