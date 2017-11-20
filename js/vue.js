@@ -5,21 +5,28 @@ var app = new Vue({
             title: "SAP Veranstaltungen",
             agendaTitle: "Agenda für heute"
         },
-        allEvents: [],
-        filteredEvents: [],
+        sortedEvents: [],   // all events from JSON
+        filteredEvents: [], // always top 5 events
     },
     methods: {
         updateEvents: function() {
             let now = Date.now
-            let sortedEvents = this.allEvents.sort(function (a, b) {
-                return a.timestamp - b.timestamp
-            });
         }
     },
     created () {
         $.getJSON("events.json", function (json) {
             console.log(json)
-            this.allEvents = json
+            let allEvents = json
+            // parse Date
+            allEvents = allEvents.forEach(item => {
+                item.time.stamp = Date.parse(item.time.stamp)
+            })
+            // sort
+            this.sortedEvents = allEvents.sort(a, b => {
+                return a.time.stamp - b.time.stamp
+            })
+
+
             //setTimer here
         });
     }
