@@ -85,7 +85,7 @@ header h1 {
 }
 
 .agenda-item .detail-wrapper {
-    border-left: 0.5rem solid #ffffff;
+    border-left: 5px solid #ffffff;
     padding-left: 1.5rem;
     padding-bottom: 1rem;
     margin-left: 0.8rem;
