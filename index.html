@@ -8,75 +8,42 @@
     <meta name="description" content="VC">
     <meta name="author" content="Luka & Henry">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://unpkg.com/vue"></script>
     <link rel="stylesheet" href="css/styles.css?v=1.0">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 </head>
 <body>
-    <div id="main-grid">
-        <h1 id="title">SAP Veranstaltung</h1>
-        <h2 id="agenda-title">Current Sessions</h2>
-        <div id="agenda">
+
+
+
+<div id="main-grid">
+    <h1 id="title">{{display.title}}</h1>
+    <h2 id="agenda-title">{{display.agendaTitle}}</h2>
+    <div id="agenda">
+        <div v-for="item in filteredEvents">
             <div class="agenda-item">
-                <div class="time">17:00</div>
+                <div class="time">{{item.time}}</div>
                 <div class="detail">
-                    <div class="title">Willkommen</div>
+                    <div class="title">{{item.title}}</div>
                     <div class="room">
                         <span class="label">Room:</span>
-                        <span class="title">C2.05</span>
+                        <span class="title">{{item.room}}</span>
                     </div>
                 </div>
             </div>
-            <div class="agenda-item">
-                <div class="time">18:00</div>
-                <div class="detail">
-                    <div class="title">Willkommen</div>
-                    <div class="room">
-                        <span class="label">Room:</span>
-                        <span class="title">C2.05</span>
-                    </div>
-                </div>
-            </div>
-            <div class="agenda-item">
-                <div class="time">19:30</div>
-                <div class="detail">
-                    <div class="title">Willkommen</div>
-                    <div class="room">
-                        <span class="label">Room:</span>
-                        <span class="title">C2.05</span>
-                    </div>
-                </div>
-            </div>
-            <div class="agenda-item">
-                <div class="time">20:15</div>
-                <div class="detail">
-                    <div class="title">Willkommen</div>
-                    <div class="room">
-                        <span class="label">Room:</span>
-                        <span class="title">C2.05</span>
-                    </div>
-                </div>
-            </div>
-            <div class="agenda-item">
-                <div class="time">21:30</div>
-                <div class="detail">
-                    <div class="title">Willkommen</div>
-                    <div class="room">
-                        <span class="label">Room:</span>
-                        <span class="title">C2.05</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="maps">
-            <img id="level-1" class="map active" src="img\prev1.png" alt="Preview">
-            <img id="level-2" class="map inactive" src="img\prev2.png" alt="Preview">
-            <img id="level-3" class="map inactive" src="img\prev3.png" alt="Preview">
-        </div>
-        <div id="indicator">
-            <div class="circle"></div>
-            <!--js generated depending on the levels-->
         </div>
     </div>
+    <div id="maps">
+        <img id="level-1" class="map active" src="img\prev1.png" alt="Preview">
+        <img id="level-2" class="map inactive" src="img\prev2.png" alt="Preview">
+        <img id="level-3" class="map inactive" src="img\prev3.png" alt="Preview">
+    </div>
+    <div id="indicator">
+        <div class="circle"></div>
+        <!--js generated depending on the levels-->
+    </div>
+</div>
 </body>
 <script src="js/scripts.js"></script>
+<script src="js/vue.js"></script>
 </html>
