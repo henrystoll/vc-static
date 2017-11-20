@@ -16,10 +16,8 @@ h1, h2, h3, h4, h5, h6 {
 body {
     color: white;
     background: #000000;
-    /*margin: 3rem;*/
     font-family: 'PT Sans', sans-serif;
     font-size: 16px;
-    /*just disabled for testing*/
     /*overflow: hidden;*/
 }
 
