@@ -58,17 +58,17 @@ header h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    margin-left: 80px;
+    margin-left: 5rem;
 }
 
 #agenda-current {
- margin-right: 40px;
+ margin-right: 1.2rem;
 }
 
 .agenda-title {
-    font-size: 40px;
-    margin-left: 60px;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    margin-left: 4rem;
+    margin-bottom: 1.2rem;
 }
 
 .agenda-item {
@@ -81,21 +81,22 @@ header h1 {
     font-size: 16px;
     width: 50px;
     text-align: right;
+    margin-top: 1rem;
 }
 
 .agenda-item .detail-wrapper {
-    border-left: 5px solid #ffffff;
-    padding-left: 25px;
-    padding-bottom: 17px;
-    margin-left: 12px;
+    border-left: 0.5rem solid #ffffff;
+    padding-left: 1.5rem;
+    padding-bottom: 1rem;
+    margin-left: 0.8rem;
     width: 100%;
 }
 
 .agenda-item .detail {
     width: 100%;
     border: solid 4px #F0AB00;
-    border-radius: 25px;
-    padding: 10px 20px;
+    border-radius: 1.5rem;
+    padding: 0.6rem 1rem;
 }
 .agenda-item:last-child >.detail{
     margin-bottom: 1.5rem;
@@ -138,7 +139,7 @@ header h1 {
 #floorname {
     grid-area: floorname;
     position: relative;
-    margin-left: -4rem;
+    margin-left: -3rem;
 }
 
 #floorname span {
@@ -163,11 +164,11 @@ header h1 {
 }
 
 #indicator>.circle {
-    width: 30px;
-    height: 30px;
+    width: 2rem;
+    height: 2rem;
     border-radius: 100%;
     border: solid 3px white;
-    margin: 8px;
+    margin: 0.5rem;
     /*TODO: add zoom / scale up and down w/ bounce!*/
     transition: 400ms ease-in-out;
 }
@@ -185,6 +186,6 @@ footer {
 }
 
 footer #logo {
-    height: 80px;
-    margin: 20px;
+    height: 4rem;
+    margin: 1rem;
 }
