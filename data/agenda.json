@@ -1,23 +1,22 @@
 {
 	"agendaItems": [
 		{
-			"title": "Willkommen", 
+			"title": "Digitale Medien",
 			"time": {
-                "from": "17:00",
-				"to": "18:00",
-				"stamp": "2017-11-20T13:15:00.000Z"
+				"from": "19:25",
+				"stamp": "2017-11-20T18:15:00.000Z"
 			},
 			"room": {
-				"id": "C4.03",
+				"id": "A2.15",
 				"capacity": "40"
 			}
 		},
 		{
 			"title": "Programmierworkshop", 
 			"time": {
-                "from": "18:00",
+                "from": "18:20",
                 "to": "20:00",
-				"stamp": "2017-11-20T13:20:00.000Z"
+				"stamp": "2017-11-20T18:15:00.000Z"
 			}, 
 			"room": {
 				"id": "A0.00",
@@ -25,21 +24,22 @@
 			}
 		},
 		{
-			"title": "Digitale Medien", 
+			"title": "Willkommen",
 			"time": {
-				"from": "19:00",
-				"stamp": "2017-11-20T13:25:00.000Z"
-			}, 
+				"from": "17:15",
+				"to": "18:00",
+				"stamp": "2017-11-20T18:15:00.000Z"
+			},
 			"room": {
-				"id": "A2.15",
+				"id": "C4.03",
 				"capacity": "40"
 			}
 		},
 		{
 			"title": "Wirtschaftsinformatik - Sales & Consulting", 
 			"time": {
-				"from": "19:00",
-				"stamp": "2017-11-20T13:30:00.000Z"
+				"from": "19:30",
+				"stamp": "2017-11-20T18:30:00.000Z"
 			}, 
 			"room": {
 				"id": "B2.07",
@@ -49,8 +49,8 @@
 		{
 			"title": "Ende", 
 			"time": {
-				"from": "20:00",
-				"stamp": "2017-11-20T13:35:00.000Z"
+				"from": "20:35",
+				"stamp": "2017-11-20T18:35:00.000Z"
 			}, 
 			"room": {
 				"id": "A3.01",

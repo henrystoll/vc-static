@@ -34,5 +34,5 @@ function nextMap() {
     //slider bar
     $("#indicator .circle.active").attr("class", CIRCLE);                           //remove active from current circle
     $("#indicator .circle:eq(" + iNoCurrentMap + ")").attr("class", ACTIVE_CIRCLE); //set next slider circle to active
-    console.log("map #" + iNoCurrentMap);
+    // console.log("map #" + iNoCurrentMap);
 }
