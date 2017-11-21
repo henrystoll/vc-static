@@ -33,7 +33,7 @@
                         <div class="detail">
                             <div class="title">{{item.title}}</div>
                             <div class="room">
-                                <span class="label">Room:</span>
+                                <span v-if="item.room.id" class="label">Room:</span>
                                 <span class="title">{{item.room.id}}</span>
                             </div>
                         </div>
@@ -50,7 +50,7 @@
                         <div class="detail">
                             <div class="title">{{item.title}}</div>
                             <div class="room">
-                                <span class="label">Room:</span>
+                                <span v-if="item.room.id" class="label">Room:</span>
                                 <span class="title">{{item.room.id}}</span>
                             </div>
                         </div>
