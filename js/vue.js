@@ -62,7 +62,7 @@ var app = new Vue({
         }
     },
     mounted () {
-        $.getJSON("../data/agenda.json", function (json) {
+        $.getJSON("../data/2017-11-23-agenda.json", function (json) {
             let allEvents = json.agendaItems
             // parse Date
             allEvents.forEach(item => {
