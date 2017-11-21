@@ -14,23 +14,35 @@ var app = new Vue({
     methods: {
         updateEvents: function () {
             let now = Date.now()
-            let i = 1;
-            let filteredEvents = this.sortedEvents.filter(item => {
-                // console.log(item.time.stamp.toJSON() + " > " + now.toJSON())
+            let currentEventsTime = 0
+
+            this.sortedEvents.forEach(item => {
+                // TODO: + 15 minuten
+                if (item.time.stamp < now && currentEventsTime < item.time.stamp)
+                    currentEventsTime = item.time.stamp
+            })
+            
+            let currentEvents = this.sortedEvents.filter(item => {
+                return item.time.stamp === currentEventsTime
+            })
+            this.currentEvents = removeTime(currentEvents)
+            
+            
+            let nextEvents = this.sortedEvents.filter(item => {
                 return item.time.stamp > now
             })
-            let lastTime;
-            filteredEvents.forEach(item => {
-                if (i <= MAX_EVENTS) {
+
+          
+            function removeTime(events) {
+                let lastTime;
+                events.forEach(item => {
                     let tempTime = item.time.stamp.format("X")
-                    if (lastTime === tempTime) {
+                    if (lastTime === tempTime)
                         item.time.stamp = ""
-                    }
                     lastTime = tempTime
-                    this.filteredEvents.push(item)
-                    i++
-                }
-            })           
+                })
+                return events           
+            }
         }
     },
     filters: {
