@@ -1,4 +1,4 @@
-var TIMER = 7;    //[s] map will switch every [s] seconds TODO: import thru config.json
+var TIMER = 2;    //[s] map will switch every [s] seconds TODO: import thru config.json
 var iNoMaps = 3;
 var iNoCurrentMap = 0;
 
@@ -28,18 +28,22 @@ function nextMap() {
     }
 
     $("#maps").fadeOut();
+    var i = 1;
     setTimeout(function () {
         //slider bar
         $("#indicator .circle.active").attr("class", "circle");                           //remove active from current circle
-        $("#indicator .circle:eq(" + iNoCurrentMap + ")").attr("class", "circle active"); //set next slider circle to active
-        
+        $("#indicator .circle:eq(" + iNoCurrentMap + ")").attr("class", "circle active"); //set next slider circle to active   
+
         // cycle thru svg here
         $("#maps .map.active").attr("class", "map")
         $("#maps .map:eq(" + iNoCurrentMap + ")").attr("class", "map active")
         $("#maps").fadeIn();
-
-
         
+        //change floorname depending on filename
+        var src = $("#maps .map:eq(" + iNoCurrentMap + ")").attr("src")
+        var name = src.substring(src.lastIndexOf("/")+1,src.lastIndexOf("."))
+        $("#floorname span").html(name)
+
 
     }, 350)
     
