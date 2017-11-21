@@ -1,4 +1,4 @@
-const MAX_EVENTS = 8
+const MAX_EVENTS = 7
 
 var app = new Vue({
     el: "#main-grid",
