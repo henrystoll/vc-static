@@ -1,4 +1,4 @@
-var TIMER = 2;    //[s] map will switch every [s] seconds TODO: import thru config.json
+var TIMER = 7;    //[s] map will switch every [s] seconds TODO: import thru config.json
 var iNoMaps = 3;
 var iNoCurrentMap = 0;
 
@@ -40,8 +40,7 @@ function nextMap() {
         $("#maps").fadeIn();
         
         //change floorname depending on filename
-        var src = $("#maps .map:eq(" + iNoCurrentMap + ")").attr("src")
-        var name = src.substring(src.lastIndexOf("/")+1,src.lastIndexOf("."))
+        var name = $("#maps .map:eq(" + iNoCurrentMap + ")").attr("name")
         $("#floorname span").html(name)
 
 

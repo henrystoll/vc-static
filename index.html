@@ -26,7 +26,7 @@
     <div id="agenda">
         <div id="agenda-current">
             <h2 class="agenda-title">Current</h2>
-            <div v-for="item in filteredEvents">
+            <div v-for="item in currentEvents">
                 <div class="agenda-item">
                     <div class="time">{{item.time.stamp | time}}</div>
                     <div class="detail-wrapper">
@@ -43,7 +43,7 @@
         </div>
         <div id="agenda-next">
             <h2 class="agenda-title">Next</h2>
-            <div v-for="item in filteredEvents">
+            <div v-for="item in nextEvents">
                 <div class="agenda-item">
                     <div class="time">{{item.time.stamp | time}}</div>
                     <div class="detail-wrapper">
@@ -61,9 +61,9 @@
     </div>
 
     <div id="maps">
-        <img class="map" src="img/basement.svg" alt="Preview">
-        <img class="map" src="img/groundfloor.svg" alt="Preview">
-        <img class="map active" src="img/firstfloor.svg" alt="Preview">
+        <img class="map" src="img/basement.svg" name="Basement" alt="Preview">
+        <img class="map" src="img/groundfloor.svg" name="Groundfloor" alt="Preview">
+        <img class="map active" src="img/firstfloor.svg" name="First Floor" alt="Preview">
     </div>
 
     <div id="floorname">
@@ -71,7 +71,7 @@
     </div>
 
     <div id="indicator">
-        <div class="circle"></div>
+        <div class="circle active"></div>
         <!--js generated depending on the levels-->
     </div>
 

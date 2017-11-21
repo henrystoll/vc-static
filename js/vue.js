@@ -1,4 +1,4 @@
-const MAX_EVENTS = 5
+const MAX_EVENTS = 8
 
 var app = new Vue({
     el: "#main-grid",
@@ -19,19 +19,19 @@ var app = new Vue({
             this.sortedEvents.forEach(item => {
                 // TODO: + 15 minuten
                 if (item.time.stamp < now && currentEventsTime < item.time.stamp)
-                    currentEventsTime = item.time.stamp
+                    currentEventsTime = item.time.stamp.format("X")
             })
             
             let currentEvents = this.sortedEvents.filter(item => {
-                return item.time.stamp === currentEventsTime
+                return item.time.stamp.format("X") === currentEventsTime
             })
             this.currentEvents = removeTime(currentEvents)
-            
             
             let nextEvents = this.sortedEvents.filter(item => {
                 return item.time.stamp > now
             })
-
+            nextEvents = removeTime(nextEvents)
+            this.nextEvents = limit(nextEvents, MAX_EVENTS)
           
             function removeTime(events) {
                 let lastTime;
@@ -42,6 +42,14 @@ var app = new Vue({
                     lastTime = tempTime
                 })
                 return events           
+            }
+
+            function limit(events, maxEvents) {
+                let filteredEvents = []
+                for (let index = 0; index < maxEvents; index++) {
+                    filteredEvents.push(events[index])
+                }
+                return filteredEvents
             }
         }
     },

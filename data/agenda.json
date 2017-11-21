@@ -28,7 +28,7 @@
 			"time": {
 				"from": "17:15",
 				"to": "18:00",
-				"stamp": "2017-11-21T09:15:00.000Z"
+				"stamp": "2017-11-21T15:15:00.000Z"
 			},
 			"room": {
 				"id": "C4.03",
@@ -39,7 +39,7 @@
 			"title": "AKB rules", 
 			"time": {
 				"from": "19:30",
-				"stamp": "2017-11-21T09:30:00.000Z"
+				"stamp": "2017-11-21T15:30:00.000Z"
 			}, 
 			"room": {
 				"id": "B2.07",
@@ -50,7 +50,7 @@
 			"title": "AKB ist echt der hotte shiz", 
 			"time": {
 				"from": "20:35",
-				"stamp": "2017-11-21T09:35:00.000Z"
+				"stamp": "2017-11-21T15:35:00.000Z"
 			}, 
 			"room": {
 				"id": "A3.01",
@@ -61,7 +61,7 @@
 			"title": "Digitale Medien",
 			"time": {
 				"from": "19:25",
-				"stamp": "2017-11-21T09:15:00.000Z"
+				"stamp": "2017-11-21T15:15:00.000Z"
 			},
 			"room": {
 				"id": "A2.15",
@@ -73,7 +73,7 @@
 			"time": {
 				"from": "18:20",
 				"to": "20:00",
-				"stamp": "2017-11-21T09:15:00.000Z"
+				"stamp": "2017-11-21T15:15:00.000Z"
 			},
 			"room": {
 				"id": "A0.00",
@@ -85,7 +85,7 @@
 			"time": {
 				"from": "17:15",
 				"to": "18:00",
-				"stamp": "2017-11-21T09:15:00.000Z"
+				"stamp": "2017-11-21T15:15:00.000Z"
 			},
 			"room": {
 				"id": "C4.03",
@@ -96,7 +96,7 @@
 			"title": "Wirtschaftsinformatik - Sales & Consulting",
 			"time": {
 				"from": "19:30",
-				"stamp": "2017-11-21T09:30:00.000Z"
+				"stamp": "2017-11-21T15:30:00.000Z"
 			},
 			"room": {
 				"id": "B2.07",
@@ -107,7 +107,7 @@
 			"title": "Check-in und Gelegenheit zum Willkommensfrühstück",
 			"time": {
 				"from": "20:35",
-				"stamp": "2017-11-21T09:35:00.000Z"
+				"stamp": "2017-11-21T15:35:00.000Z"
 			},
 			"room": {
 				"id": "A3.01",
