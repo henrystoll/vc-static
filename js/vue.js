@@ -13,8 +13,8 @@ var app = new Vue({
     },
     methods: {
         updateEvents: function () {
-            let now = new Date("2017-11-23T13:30:00.000Z")
-            // let now = Date.now()
+            //let now = new Date("2017-11-24T13:00+01:00")
+            let now = Date.now()
             let currentEventsTime = 0
 
             this.sortedEvents.forEach(item => {
@@ -64,7 +64,9 @@ var app = new Vue({
         }
     },
     mounted () {
+        // change date from 23 to 24
         $.getJSON("../data/2017-11-23-agenda.json", function (json) {
+        // $.getJSON("../data/2017-11-24-agenda.json", function (json) {
             let allEvents = json.agendaItems
             // parse Date
             allEvents.forEach(item => {

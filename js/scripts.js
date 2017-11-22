@@ -1,4 +1,4 @@
-var TIMER = 3;    //[s] map will switch every [s] seconds TODO: import thru config.json
+var TIMER = 7;    //[s] map will switch every [s] seconds TODO: import thru config.json
 var iNoMaps = 3;
 var iNoCurrentMap = 0;
 

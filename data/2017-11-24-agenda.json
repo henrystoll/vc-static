@@ -1,18 +1,9 @@
 {
 	"agendaItems": [
 		{
-			"title": "",
-			"time": {
-				"stamp": "2017-11-24T00:00:00.000Z"
-			},
-			"room": {
-				"id": ""
-			}
-		},
-		{
 			"title": "Optionale Führung",
 			"time": {
-				"stamp": "2017-11-24T00:00:00.000Z"
+				"stamp": "2017-11-24T08:45+01:00"
 			},
 			"room": {
 				"id": ""
@@ -21,7 +12,7 @@
 		{
 			"title": "Kleines Frühstück",
 			"time": {
-				"stamp": "2017-11-24T00:00:00.000Z"
+				"stamp": "2017-11-24T09:00+01:00"
 			},
 			"room": {
 				"id": ""
@@ -30,7 +21,7 @@
 		{
 			"title": "Beraterzertifizierung",
 			"time": {
-				"stamp": "2017-11-24T00:00:00.000Z"
+				"stamp": "2017-11-24T09:00+01:00"
 			},
 			"room": {
 				"id": ""
@@ -39,7 +30,7 @@
 		{
 			"title": "Wechsel auf SAP S/4HANA",
 			"time": {
-				"stamp": "2017-11-24T00:00:00.000Z"
+				"stamp": "2017-11-24T09:30+01:00"
 			},
 			"room": {
 				"id": "S3"
@@ -48,7 +39,7 @@
 		{
 			"title": "SAP BW/4HANA – Muster für eine moderne Mix-DWH-Architektur und flexible Modelierung",
 			"time": {
-				"stamp": "2017-11-24T00:00:00.000Z"
+				"stamp": "2017-11-24T09:30+01:00"
 			},
 			"room": {
 				"id": "A1.10"
@@ -57,7 +48,7 @@
 		{
 			"title": "Digitale Experience mit der SAP Cloud Platform",
 			"time": {
-				"stamp": "2017-11-24T00:00:00.000Z"
+				"stamp": "2017-11-24T09:30+01:00"
 			},
 			"room": {
 				"id": "AE.26"
@@ -66,7 +57,7 @@
 		{
 			"title": "Mit SAP Fiori in die Cloud",
 			"time": {
-				"stamp": "2017-11-24T00:00:00.000Z"
+				"stamp": "2017-11-24T10:15+01:00"
 			},
 			"room": {
 				"id": "AE.26"
@@ -75,7 +66,7 @@
 		{
 			"title": "SAP Web IDE & XSA – Erste Schritte",
 			"time": {
-				"stamp": "2017-11-24T00:00:00.000Z"
+				"stamp": "2017-11-24T09:30+01:00"
 			},
 			"room": {
 				"id": "A1.06"
@@ -84,7 +75,7 @@
 		{
 			"title": "SAP Cloud Platform und Internet of Things",
 			"time": {
-				"stamp": "2017-11-24T00:00:00.000Z"
+				"stamp": "2017-11-24T09:30+01:00"
 			},
 			"room": {
 				"id": "A1.02"
@@ -93,7 +84,7 @@
 		{
 			"title": "Kaffeepause",
 			"time": {
-				"stamp": "2017-11-24T00:00:00.000Z"
+				"stamp": "2017-11-24T11:00+01:00"
 			},
 			"room": {
 				"id": ""
@@ -102,7 +93,7 @@
 		{
 			"title": "SAP S/4HANA Cloud",
 			"time": {
-				"stamp": "2017-11-24T00:00:00.000Z"
+				"stamp": "2017-11-24T11:30+01:00"
 			},
 			"room": {
 				"id": "S3"
@@ -111,7 +102,7 @@
 		{
 			"title": "Upgrade-Pfade zu SAP BW/4HANA",
 			"time": {
-				"stamp": "2017-11-24T00:00:00.000Z"
+				"stamp": "2017-11-24T11:30+01:00"
 			},
 			"room": {
 				"id": "A1.10"
@@ -120,7 +111,7 @@
 		{
 			"title": "SAPUI5-Neuigkeiten",
 			"time": {
-				"stamp": "2017-11-24T00:00:00.000Z"
+				"stamp": "2017-11-24T11:30+01:00"
 			},
 			"room": {
 				"id": "AE.26"
@@ -129,7 +120,7 @@
 		{
 			"title": "SAP Fiori® elements",
 			"time": {
-				"stamp": "2017-11-24T00:00:00.000Z"
+				"stamp": "2017-11-24T12:15+01:00"
 			},
 			"room": {
 				"id": "AE.26"
@@ -138,7 +129,7 @@
 		{
 			"title": "SAP HANA – Operations",
 			"time": {
-				"stamp": "2017-11-24T00:00:00.000Z"
+				"stamp": "2017-11-24T11:30+01:00"
 			},
 			"room": {
 				"id": "A1.06"
@@ -147,7 +138,7 @@
 		{
 			"title": "Process Integration (On Premise und Cloud)",
 			"time": {
-				"stamp": "2017-11-24T00:00:00.000Z"
+				"stamp": "2017-11-24T11:30+01:00"
 			},
 			"room": {
 				"id": "A1.02"
@@ -156,7 +147,7 @@
 		{
 			"title": "Mittagessen",
 			"time": {
-				"stamp": "2017-11-24T00:00:00.000Z"
+				"stamp": "2017-11-24T13:00+01:00"
 			},
 			"room": {
 				"id": ""
@@ -165,7 +156,7 @@
 		{
 			"title": "SAP S/4HANA 1709 Delta",
 			"time": {
-				"stamp": "2017-11-24T00:00:00.000Z"
+				"stamp": "2017-11-24T14:00+01:00"
 			},
 			"room": {
 				"id": "S3"
@@ -174,7 +165,7 @@
 		{
 			"title": "Data-Tiering-Optimierung mit SAP BW/4HANA",
 			"time": {
-				"stamp": "2017-11-24T00:00:00.000Z"
+				"stamp": "2017-11-24T14:00+01:00"
 			},
 			"room": {
 				"id": "A1.10"
@@ -183,7 +174,7 @@
 		{
 			"title": "SAP Fiori Launchpad und SAP Cloud Platform Portal",
 			"time": {
-				"stamp": "2017-11-24T00:00:00.000Z"
+				"stamp": "2017-11-24T14:00+01:00"
 			},
 			"room": {
 				"id": "AE.26"
@@ -192,7 +183,7 @@
 		{
 			"title": "Native mobile Apps mit SAP Cloud Platform Mobile Services",
 			"time": {
-				"stamp": "2017-11-24T00:00:00.000Z"
+				"stamp": "2017-11-24T14:45+01:00"
 			},
 			"room": {
 				"id": "AE.26"
@@ -201,7 +192,7 @@
 		{
 			"title": "Performance Management",
 			"time": {
-				"stamp": "2017-11-24T00:00:00.000Z"
+				"stamp": "2017-11-24T14:00+01:00"
 			},
 			"room": {
 				"id": "A1.06"
@@ -210,7 +201,7 @@
 		{
 			"title": "Effektiver SAP HANA-Basisbetrieb mit SAP Landscape Management 3.0",
 			"time": {
-				"stamp": "2017-11-24T00:00:00.000Z"
+				"stamp": "2017-11-24T14:00+01:00"
 			},
 			"room": {
 				"id": "A1.02"
@@ -219,7 +210,7 @@
 		{
 			"title": "Ende der Veranstaltung",
 			"time": {
-				"stamp": "2017-11-24T00:00:00.000Z"
+				"stamp": "2017-11-24T15:30+01:00"
 			},
 			"room": {
 				"id": ""
@@ -228,11 +219,11 @@
 		{
 			"title": "Optionale Führung",
 			"time": {
-				"stamp": "2017-11-24T00:00:00.000Z"
+				"stamp": "2017-11-24T15:45+01:00"
 			},
 			"room": {
 				"id": ""
 			}
-		},
+		}
 	]
 }
