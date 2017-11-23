@@ -13,6 +13,7 @@ var app = new Vue({
     },
     methods: {
         updateEvents: function () {
+            console.log("UE");
             //let now = new Date("2017-11-24T13:00+01:00")
             console.log("spast")
             let now = Date.now()
@@ -66,9 +67,8 @@ var app = new Vue({
         }
     },
     mounted () {
-        // change date from 23 to 24
-        $.getJSON("../data/2017-11-23-agenda.json", function (json) {
-        // $.getJSON("../data/2017-11-24-agenda.json", function (json) {
+        $.getJSON("./data/agenda.json", function (json) {
+            console.log("mounted")
             let allEvents = json.agendaItems
             // parse Date
             allEvents.forEach(item => {
@@ -81,9 +81,18 @@ var app = new Vue({
             // async call => vue w/ this. is not available => resort to app.
             app.sortedEvents = allEvents
             app.updateEvents()
-            setInterval( () => {
-                app.updateEvents()
-            }, 1000)
+            setInterval(app.updateEvents, 300)
+        })
+        // sort
+        allEvents.sort(function(a, b) {
+            return a.time.stamp - b.time.stamp
         });
+        // async call => vue w/ this. is not available => resort to app.
+        app.sortedEvents = allEvents
+        app.updateEvents()
+        
+        setInterval( () => {
+            app.updateEvents()
+        }, 1000);
     }
 })
