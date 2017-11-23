@@ -14,6 +14,7 @@ var app = new Vue({
     methods: {
         updateEvents: function () {
             //let now = new Date("2017-11-24T13:00+01:00")
+            console.log("spast")
             let now = Date.now()
             let currentEventsTime = 0
 
@@ -34,7 +35,8 @@ var app = new Vue({
             nextEvents = removeTime(nextEvents)
             this.nextEvents = limit(nextEvents, MAX_EVENTS)
           
-            function removeTime(events) {
+            function removeTime(iEvents) {
+                let events = _.cloneDeep(iEvents)
                 let lastTime;
                 events.forEach(item => {
                     let tempTime = item.time.stamp.format("X")
@@ -79,7 +81,9 @@ var app = new Vue({
             // async call => vue w/ this. is not available => resort to app.
             app.sortedEvents = allEvents
             app.updateEvents()
-            //setTimer here
+            setInterval( () => {
+                app.updateEvents()
+            }, 1000)
         });
     }
 })
