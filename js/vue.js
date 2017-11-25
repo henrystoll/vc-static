@@ -1,4 +1,4 @@
-const MAX_EVENTS = 6
+const MAX_EVENTS = 5
 
 var app = new Vue({
     el: "#main-grid",
@@ -13,8 +13,8 @@ var app = new Vue({
     },
     methods: {
         updateEvents: function () {
-            //let now = new Date("2017-11-24T13:00+01:00")
-            let now = Date.now()
+            let now = new Date("2017-11-24T13:00+01:00")
+            //let now = Date.now()
             let currentEventsTime = 0
 
             this.sortedEvents.forEach(item => {
