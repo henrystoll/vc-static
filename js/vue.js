@@ -4,7 +4,7 @@ var app = new Vue({
     el: "#main-grid",
     data: {
         display: {
-            title: "SAP Innovation Skills Forum"
+            title: "AKB Weihnachtsfeier"
         },
         sortedEvents: [],   // all events from JSON
         filteredEvents: [], // always top 5 events
