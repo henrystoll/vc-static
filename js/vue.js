@@ -13,7 +13,7 @@ var app = new Vue({
     },
     methods: {
         updateEvents: function () {
-            let now = new Date("2017-11-24T13:00+01:00")
+            let now = new Date("2017-11-24T14:00+01:00")
             //let now = Date.now()
             let currentEventsTime = 0
 
