@@ -4,7 +4,7 @@ var app = new Vue({
     el: "#main-grid",
     data: {
         display: {
-            title: "SAP Innovation Skills Forum"
+            title: "SAP Security Forum"
         },
         sortedEvents: [],   // all events from JSON
         filteredEvents: [], // always top 5 events
@@ -13,8 +13,8 @@ var app = new Vue({
     },
     methods: {
         updateEvents: function () {
-            let now = new Date("2017-11-24T14:00+01:00")
-            //let now = Date.now()
+            //let now = new Date("2017-11-24T14:00+01:00")
+            let now = Date.now()
             let currentEventsTime = 0
 
             this.sortedEvents.forEach(item => {

@@ -1,478 +1,100 @@
+
 {
 	"agendaItems": [
 		{
-			"title": "Check-in und Gelegenheit zum Willkommensfrühstück",
+			"title": "Begrüßung",
 			"time": {
-				"from": "09:00",
-				"to": "10:00",
-				"stamp": "2017-11-23T08:00:00.000Z"
-			},
-			"room": {
-				"id": ""
-			}
-		},
-		{
-			"title": "Eröffnung und Begrüßung",
-			"time": {
-				"from": "10:00",
-				"to": "10:15",
-				"stamp": "2017-11-23T09:00:00.000Z"
-			},
-			"room": {
-				"id": ""
-			}
-		},
-		{
-			"title": "K1 – Wird „User Experience“ digital?",
-			"time": {
-				"from": "10:15",
-				"to": "11:00",
-				"stamp": "2017-11-23T09:15:00.000Z"
-			},
-			"room": {
-				"id": ""
-			}
-		},
-		{
-			"title": "K2 – Digitale Transformation mit SAP Leonardo IoT",
-			"time": {
-				"from": "11:00",
-				"to": "11:15",
-				"stamp": "2017-11-23T10:00:00.000Z"
-			},
-			"room": {
-				"id": ""
-			}
-		},
-		{
-			"title": "Kaffeepause",
-			"time": {
-				"from": "11:00",
-				"to": "12:10",
-				"stamp": "2017-11-23T11:50:00.000Z"
-			},
-			"room": {
-				"id": ""
-			}
-		},
-		{
-			"title": "K3 – SAP Leonardo Machine Learning",
-			"time": {
-				"from": "12:10",
-				"to": "13:00",
-				"stamp": "2017-11-23T11:01:00.000Z"
-			},
-			"room": {
-				"id": ""
-			}
-		},
-		{
-			"title": "Mittagessen",
-			"time": {
-				"from": "13:00",
-				"to": "14:00",
-				"stamp": "2017-11-23T12:00:00.000Z"
-			},
-			"room": {
-				"id": "Kantine"
-			}
-		},
-		{
-			"title": "SAP S/4HANA Value Experience",
-			"time": {
-				"from": "14:00",
-				"to": "15:30",
-				"stamp": "2017-11-23T13:00:00.000Z"
+				"stamp": "2017-12-12T10:10+01:00"
 			},
 			"room": {
 				"id": "S3"
 			}
 		},
 		{
-			"title": "SAP BW/4HANA Überblick und Roadmap",
+			"title": "Der IT-Arbeitsplatz von morgen",
 			"time": {
-				"from": "14:00",
-				"to": "15:30",
-				"stamp": "2017-11-23T13:00:00.000Z"
-			},
-			"room": {
-				"id": "A1.10"
-			}
-		},
-		{
-			"title": "SAP CoPilot: Digitaler Assistent für Unternehmen",
-			"time": {
-				"from": "14:00",
-				"to": "14:45",
-				"stamp": "2017-11-23T13:00:00.000Z"
-			},
-			"room": {
-				"id": "AE.26"
-			}
-		},
-		{
-			"title": "Neueste UX-Trends und Innovationen",
-			"time": {
-				"from": "14:45",
-				"to": "15:30",
-				"stamp": "2017-11-23T13:45:00.000Z"
-			},
-			"room": {
-				"id": "AE.26"
-			}
-		},
-		{
-			"title": "SAP HANA Roadmap",
-			"time": {
-				"from": "14:00",
-				"to": "15:30",
-				"stamp": "2017-11-23T13:00:00.000Z"
-			},
-			"room": {
-				"id": "A1.06"
-			}
-		},
-		{
-			"title": "Überblick ABAP® 7.5x ",
-			"time": {
-				"from": "14:00",
-				"to": "15:30",
-				"stamp": "2017-11-23T13:00:00.000Z"
-			},
-			"room": {
-				"id": "A1.02"
-			}
-		},
-		{
-			"title": "Kaffepause",
-			"time": {
-				"from": "15:30",
-				"to": "16:00",
-				"stamp": "2017-11-23T14:30:00.000Z"
-			},
-			"room": {
-				"id": "Kaffeeecke"
-			}
-		},
-		{
-			"title": "Innovationen im SAP S/4HANA-Kontext",
-			"time": {
-				"from": "16:00",
-				"to": "17:30",
-				"stamp": "2017-11-23T15:00:00.000Z"
+				"stamp": "2017-12-12T10:30+01:00"
 			},
 			"room": {
 				"id": "S3"
 			}
 		},
 		{
-			"title": "Big Data Warehousing – Wie SAP Data Hub und SAP BW/4HANA interagieren",
+			"title": "Security Scorecard",
 			"time": {
-				"from": "16:00",
-				"to": "17:30",
-				"stamp": "2017-11-23T15:00:00.000Z"
-			},
-			"room": {
-				"id": "A1.10"
-			}
-		},
-		{
-			"title": "SAP Build ",
-			"time": {
-				"from": "16:00",
-				"to": "17:30",
-				"stamp": "2017-11-23T15:00:00.000Z"
-			},
-			"room": {
-				"id": "AE.26"
-			}
-		},
-		{
-			"title": "EAD/SAP HANA – native Data Store Object und Flowgraph (SDI)",
-			"time": {
-				"from": "16:00",
-				"to": "17:30",
-				"stamp": "2017-11-23T15:00:00.000Z"
-			},
-			"room": {
-				"id": "A1.06"
-			}
-		},
-		{
-			"title": "Überblick SAP NetWeaver",
-			"time": {
-				"from": "16:00",
-				"to": "17:30",
-				"stamp": "2017-11-23T15:00:00.000Z"
-			},
-			"room": {
-				"id": "A1.02"
-			}
-		},
-		{
-			"title": "Abfahrt Schulungszentrum",
-			"time": {
-				"from": "17:45",
-				"to": "18:15",
-				"stamp": "2017-11-23T16:45:00.000Z"
-			},
-			"room": {
-				"id": ""
-			}
-		},
-		{
-			"title": "Heidelberger Schloss",
-			"time": {
-				"from": "18:15",
-				"to": "18:50",
-				"stamp": "2017-11-23T17:15:00.000Z"
-			},
-			"room": {
-				"id": ""
-			}
-		},
-		{
-			"title": "Restaurant Romer in Heidelberg",
-			"time": {
-				"from": "19:00",
-				"to": "22:00",
-				"stamp": "2017-11-23T18:00:00.000Z"
-			},
-			"room": {
-				"id": ""
-			}
-		},
-		{
-			"title": "Rückfahrt nach Walldorf",
-			"time": {
-				"from": "22:00",
-				"to": "22:30",
-				"stamp": "2017-11-23T21:00:00.000Z"
-			},
-			"room": {
-				"id": ""
-			}
-		},
-		{
-			"title": "Optionale Führung",
-			"time": {
-				"stamp": "2017-11-24T08:45+01:00"
-			},
-			"room": {
-				"id": ""
-			}
-		},
-		{
-			"title": "Kleines Frühstück",
-			"time": {
-				"stamp": "2017-11-24T09:00+01:00"
-			},
-			"room": {
-				"id": ""
-			}
-		},
-		{
-			"title": "Beraterzertifizierung",
-			"time": {
-				"stamp": "2017-11-24T09:00+01:00"
-			},
-			"room": {
-				"id": ""
-			}
-		},
-		{
-			"title": "Wechsel auf SAP S/4HANA",
-			"time": {
-				"stamp": "2017-11-24T09:30+01:00"
+				"stamp": "2017-12-12T11:40+01:00"
 			},
 			"room": {
 				"id": "S3"
 			}
 		},
 		{
-			"title": "SAP BW/4HANA – Muster für eine moderne Mix-DWH-Architektur und flexible Modelierung",
+			"title": "HANA2.0: Sicherheitsfeatures und wichtige Einstellungen",
 			"time": {
-				"stamp": "2017-11-24T09:30+01:00"
-			},
-			"room": {
-				"id": "A1.10"
-			}
-		},
-		{
-			"title": "Digitale Experience mit der SAP Cloud Platform",
-			"time": {
-				"stamp": "2017-11-24T09:30+01:00"
+				"stamp": "2017-12-12T13:00+01:00"
 			},
 			"room": {
 				"id": "AE.26"
 			}
 		},
 		{
-			"title": "Mit SAP Fiori in die Cloud",
+			"title": "Loggingeinstellungen, Angriffserkennung und Forensik in SAP-Systemen",
 			"time": {
-				"stamp": "2017-11-24T10:15+01:00"
+				"stamp": "2017-12-12T15:00+01:00"
 			},
 			"room": {
 				"id": "AE.26"
 			}
 		},
 		{
-			"title": "SAP Web IDE & XSA – Erste Schritte",
+			"title": "SAP Cloud Connector - Installation bis Principal-Propagation",
 			"time": {
-				"stamp": "2017-11-24T09:30+01:00"
-			},
-			"room": {
-				"id": "A1.06"
-			}
-		},
-		{
-			"title": "SAP Cloud Platform und Internet of Things",
-			"time": {
-				"stamp": "2017-11-24T09:30+01:00"
-			},
-			"room": {
-				"id": "A1.02"
-			}
-		},
-		{
-			"title": "Kaffeepause",
-			"time": {
-				"stamp": "2017-11-24T11:00+01:00"
-			},
-			"room": {
-				"id": ""
-			}
-		},
-		{
-			"title": "SAP S/4HANA Cloud",
-			"time": {
-				"stamp": "2017-11-24T11:30+01:00"
+				"stamp": "2017-12-12T13:00+01:00"
 			},
 			"room": {
 				"id": "S3"
 			}
 		},
 		{
-			"title": "Upgrade-Pfade zu SAP BW/4HANA",
+			"title": "HANA2.0: Berechtigungen",
 			"time": {
-				"stamp": "2017-11-24T11:30+01:00"
-			},
-			"room": {
-				"id": "A1.10"
-			}
-		},
-		{
-			"title": "SAPUI5-Neuigkeiten",
-			"time": {
-				"stamp": "2017-11-24T11:30+01:00"
-			},
-			"room": {
-				"id": "AE.26"
-			}
-		},
-		{
-			"title": "SAP Fiori® elements",
-			"time": {
-				"stamp": "2017-11-24T12:15+01:00"
-			},
-			"room": {
-				"id": "AE.26"
-			}
-		},
-		{
-			"title": "SAP HANA – Operations",
-			"time": {
-				"stamp": "2017-11-24T11:30+01:00"
-			},
-			"room": {
-				"id": "A1.06"
-			}
-		},
-		{
-			"title": "Process Integration (On Premise und Cloud)",
-			"time": {
-				"stamp": "2017-11-24T11:30+01:00"
-			},
-			"room": {
-				"id": "A1.02"
-			}
-		},
-		{
-			"title": "Mittagessen",
-			"time": {
-				"stamp": "2017-11-24T13:00+01:00"
-			},
-			"room": {
-				"id": ""
-			}
-		},
-		{
-			"title": "SAP S/4HANA 1709 Delta",
-			"time": {
-				"stamp": "2017-11-24T14:00+01:00"
+				"stamp": "2017-12-12T15:00+01:00"
 			},
 			"room": {
 				"id": "S3"
 			}
 		},
 		{
-			"title": "Data-Tiering-Optimierung mit SAP BW/4HANA",
+			"title": "Security Scorecard - Ergebnisse",
 			"time": {
-				"stamp": "2017-11-24T14:00+01:00"
+				"stamp": "2017-12-12T16:40+01:00"
 			},
 			"room": {
-				"id": "A1.10"
+				"id": "S3"
 			}
 		},
 		{
-			"title": "SAP Fiori Launchpad und SAP Cloud Platform Portal",
+			"title": "Überblick der SAO Audit Managment-Lösung mit Schwerpunkt Reporting",
 			"time": {
-				"stamp": "2017-11-24T14:00+01:00"
-			},
-			"room": {
-				"id": "AE.26"
-			}
-		},
-		{
-			"title": "Native mobile Apps mit SAP Cloud Platform Mobile Services",
-			"time": {
-				"stamp": "2017-11-24T14:45+01:00"
-			},
-			"room": {
-				"id": "AE.26"
-			}
-		},
-		{
-			"title": "Performance Management",
-			"time": {
-				"stamp": "2017-11-24T14:00+01:00"
+				"stamp": "2017-12-12T13:00+01:00"
 			},
 			"room": {
 				"id": "A1.06"
 			}
 		},
 		{
-			"title": "Effektiver SAP HANA-Basisbetrieb mit SAP Landscape Management 3.0",
+			"title": "SAP Tax Compliance",
 			"time": {
-				"stamp": "2017-11-24T14:00+01:00"
+				"stamp": "2017-12-12T15:00+01:00"
 			},
 			"room": {
-				"id": "A1.02"
+				"id": "A1.06"
 			}
 		},
 		{
-			"title": "Ende der Veranstaltung",
+			"title": "Abendveranstaltung",
 			"time": {
-				"stamp": "2017-11-24T15:30+01:00"
-			},
-			"room": {
-				"id": ""
-			}
-		},
-		{
-			"title": "Optionale Führung",
-			"time": {
-				"stamp": "2017-11-24T15:45+01:00"
+				"stamp": "2017-12-12T15:00+01:00"
 			},
 			"room": {
 				"id": ""
