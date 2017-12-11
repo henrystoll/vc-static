@@ -18,7 +18,7 @@ var app = new Vue({
             let currentEventsTime = 0
 
             this.sortedEvents.forEach(item => {
-                // TODO: + 15 minuten
+                // TODO: + 15 minuten ?
                 if (item.time.stamp < now && currentEventsTime < item.time.stamp)
                     currentEventsTime = item.time.stamp.format("X")
             })

@@ -99,6 +99,124 @@
 			"room": {
 				"id": ""
 			}
+		},
+		{
+			"title": "Mittagspause",
+			"time": {
+				"stamp": "2017-12-12T12:00+01:00"
+			},
+			"room": {
+				"id": ""
+			}
+		},
+		{
+			"title": "Kaffeepause",
+			"time": {
+				"stamp": "2017-12-12T14:30+01:00"
+			},
+			"room": {
+				"id": ""
+			}
+		},
+
+
+		{
+			"title": "A3: SAP Solution Manager: A Hacker Tool or A Tool for Security Administrators?",
+			"time": {
+				"stamp": "2017-13-12T09:30+01:00"
+			},
+			"room": {
+				"id": "AE.26"
+			}
+		},
+		{
+			"title": "A4: HANA 2.0 Cockpit: Architektur & Sicherheits-empfehlungen",
+			"time": {
+				"stamp": "2017-12-13T11:00+01:00"
+			},
+			"room": {
+				"id": "AE.26"
+			}
+		},{
+			"title": "A5: Härtung von SAP-ABAP-Systemen: Grundlagen und Projektverläufe",
+			"time": {
+				"stamp": "2017-12-13T13:30+01:00"
+			},
+			"room": {
+				"id": "AE.26"
+			}
+		},
+		{
+			"title": "B3: Anmelde- und User-ID-Verteilungsverfahren in heterogenen On-Premise- und Cloud-Szenarien",
+			"time": {
+				"stamp": "2017-13-12T09:30+01:00"
+			},
+			"room": {
+				"id": "S3"
+			}
+		},
+		{
+			"title": "B4: Berechtigungsverwaltung in SAP S/4HANA",
+			"time": {
+				"stamp": "2017-12-13T11:00+01:00"
+			},
+			"room": {
+				"id": "S3"
+			}
+		},
+		{
+			"title": "B5: SAP Cloud Platform: Benutzermanagement und sichere Programmierung",
+			"time": {
+				"stamp": "2017-12-13T13:30+01:00"
+			},
+			"room": {
+				"id": "S3"
+			}
+		},
+		{
+			"title": "C3: Datenschutz: Allgemeine Grundlagen und Anforderungen",
+			"time": {
+				"stamp": "2017-13-12T09:30+01:00"
+			},
+			"room": {
+				"id": "A1.06"
+			}
+		},
+		{
+			"title": "C4: Datenschutz: Vereinfachtes Sperren und Löschen personenbezogener Daten in der SAP Business Suite",
+			"time": {
+				"stamp": "2017-12-13T11:00+01:00"
+			},
+			"room": {
+				"id": "A1.06"
+			}
+		},
+		{
+			"title": "C5: Datenschutz: Implementierung von Anonymisierungsverfahren",
+			"time": {
+				"stamp": "2017-12-13T13:30+01:00"
+			},
+			"room": {
+				"id": "A1.06"
+			}
+		},
+		{
+			"title": "Mittagspause",
+			"time": {
+				"stamp": "2017-12-13T12:30+01:00"
+			},
+			"room": {
+				"id": ""
+			}
+		},
+		{
+			"title": "Kaffeepause",
+			"time": {
+				"stamp": "2017-12-13T10:30+01:00"
+			},
+			"room": {
+				"id": ""
+			}
 		}
 	]
 }
